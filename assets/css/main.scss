@@ -1,0 +1,79 @@
+body{
+    margin:0;
+}
+#logo{
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.063);
+    padding-bottom: 20px;
+    
+
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    ul {
+        display: flex;
+        gap: 20px;
+        
+    }
+
+    li{
+
+        list-style: none;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+
+    }
+}
+
+.background{
+    background-image: url("/assets/image/pexels-antony-trivet-9898281.jpg");
+    height: 80vh;
+    background-size: 100%;
+    background-repeat:no-repeat;
+    background-position: center;
+    margin: 0;
+}
+
+.buttonflex{
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.button{
+
+    padding: 20px;
+    margin-top: 10px;
+    font-size: 20px;
+    background-color: white;
+}
+
+.productCard{
+    border: 1px solid black;
+    width: 300px;
+    margin-bottom: 2%;
+    img{
+        width: 100%
+    }
+
+    h2{
+        text-align: center;
+        font-size: xx-large;
+        font-weight: 200;
+    }
+
+}
+
+#products{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2%;
+    
+}
