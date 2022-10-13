@@ -21,9 +21,11 @@ fetch("https://dummyjson.com/products")
 
 // behandling af data
 const renderContent = (data) => {
-	console.log(data);
+	// console.log(data);
+	console.log(data.category);
 
-	document.getElementById("products").innerHTML += `
+	if (data.category === "smartphones") {
+		document.getElementById("smartphones").innerHTML += `
     <div class="productCard">
     
     <h2>${data.title} </h2>
@@ -37,4 +39,35 @@ const renderContent = (data) => {
     
     
     `;
+	}
+	if (data.category === "laptops") {
+		document.getElementById("laptops").innerHTML += `
+    <div class="productCard">
+    
+    <h2>${data.title} </h2>
+    <figure> <img src="${data.thumbnail}" /> </figure>
+    <div>${data.description} </div>
+    <div>${data.price} </div>
+    <div>${data.brand} </div>
+    <div>${data.rating} </div>
+
+    </div>
+    
+    
+    `;
+	}
+
+	// document.getElementById("products").innerHTML += `
+	// <div class="productCard">
+
+	// <h2>${data.title} </h2>
+	// <figure> <img src="${data.thumbnail}" /> </figure>
+	// <div>${data.description} </div>
+	// <div>${data.price} </div>
+	// <div>${data.brand} </div>
+	// <div>${data.rating} </div>
+
+	// </div>
+
+	// `;
 };

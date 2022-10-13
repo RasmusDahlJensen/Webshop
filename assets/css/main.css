@@ -60,7 +60,7 @@ body {
   font-weight: 200;
 }
 
-#products {
+.products {
   display: flex;
   flex-wrap: wrap;
   gap: 2%;
